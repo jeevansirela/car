@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>I created an Event Website. Learn #Django in 4 hours on http://slash4.de</title>
+        <meta name="description" content="I just created my own Event Website. Learn Django in 4 hours on http://slash4.de/blog/learn-django-in-4-hours #django #python #onlinecourse #slash4">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!--== CSS Files ==-->
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" media="screen">
+        <link href="{% static "css/style.css" %}" rel="stylesheet" media="screen">
+
+    </head>
+    <body>
+        <header id="header">
+            <div id="menu" class="header-menu fixed">
+                <div class="box">
+                    <div class="row">
+                        <nav role="navigation" class="col-sm-12">
+                            <div class="navbar-header">
+
+                                <!--== Logo ==-->
+
+                                <span class="style">
+                                    <a class="lstye home" href="/events">Browse</a>
+                                </span>
+
+                            </div>
+                            <div class="navbar simple">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/login/">Sign In</a></li>
+                                    <li><a href="/register/">Register</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!--== Site Description ==-->
+            <div class="myt">
+                <div class="container">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4><a href="/test/">Psychometric test</a></h4>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <!-- Site Search box -->
+            <div class="header-cta">
+                <div class="container">
+                </div>
+            </div>
+
+            <div class="header-bg">
+                <div class="banner" id="banner">
+                    <img src="{% static "images/demo/bg-slide-02.jpg" %}" alt="Slide Image"/>
+                </div>
+            </div>
+        </header>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="copyright"> &copy; Copyright slash4</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
